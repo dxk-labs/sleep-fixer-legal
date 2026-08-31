@@ -20,10 +20,11 @@
 <p>Sleep Fixer ("the app") is built with one rule above everything else: it never guilts, shames, or pressures you about your sleep — and that same respect extends to your data. This policy explains, plainly, what the app does and doesn't do with your information.</p>
 
 <h2>No account required</h2>
-<p>Sleep Fixer does not require you to create an account, and does not ask for your name, email address, or any other identifying information to use the app.</p>
+<p>Sleep Fixer does not require you to create an account to use the app. Every install automatically gets an anonymous identity behind the scenes (so your plan and progress can be saved) without ever asking for your name, email, or any other identifying information.</p>
+<p>Optionally, from the Profile screen, you can choose to sign in with an email/password or a Google account. This is entirely opt-in and exists for one reason: to let your plan and progress follow you if you switch to a new phone or reinstall the app. If you sign in, we store the email address associated with your account (via Firebase Authentication, a Google service) — nothing else changes about what's collected, and nothing in the app is restricted to people who sign in.</p>
 
-<h2>What's stored on your device</h2>
-<p>Your sleep schedule, goals, streaks, and progress history are stored locally on your device only. This data is not uploaded to, or stored on, any server we operate. If you uninstall the app, this data is deleted along with it.</p>
+<h2>What's stored on your device (and backed up)</h2>
+<p>Your sleep schedule, goals, streaks, and progress history are stored locally on your device first — the app works fully without an internet connection. That same data is also mirrored to Cloud Firestore (a Google service) as a backup, tied to your anonymous or signed-in identity, so it isn't lost if you reinstall the app or (if you've signed in) switch devices. Nobody else can access your data — it's scoped so only your own account can read or write it.</p>
 
 <h2>AI Coach</h2>
 <p>When you use the AI Coach feature, the messages you send and relevant context (like your sleep schedule) are sent to Google's Gemini API to generate a response. This is the only way the AI Coach can work. Please avoid sharing sensitive personal information (like medical record numbers, financial details, or passwords) in your messages. Google's handling of this data is governed by <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener">Google's Gemini API terms</a>.</p>
@@ -39,7 +40,7 @@
   <li>We don't show ads.</li>
   <li>We don't sell your data to anyone, ever.</li>
   <li>We don't use third-party analytics or advertising trackers.</li>
-  <li>We don't require or ask for your real name, email, or phone number.</li>
+  <li>We don't require your real name, email, or phone number — an email is only collected if you personally choose to sign in for cross-device sync.</li>
 </ul>
 
 <h2>Children's privacy</h2>
