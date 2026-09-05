@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sleep Fixer — Delete Your Account and Data</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; max-width: 720px; margin: 0 auto; padding: 40px 20px; color: #222; }
+  h1 { font-size: 1.8em; }
+  h2 { font-size: 1.25em; margin-top: 2em; }
+  code { background: #f2f2f2; padding: 2px 5px; border-radius: 3px; }
+  .updated { color: #666; font-size: 0.9em; }
+  ol, ul { padding-left: 1.3em; }
+</style>
+</head>
+<body>
+
+<h1>Sleep Fixer — Delete Your Account and Data</h1>
+<p class="updated">Last updated: September 5, 2026</p>
+
+<p>This page explains how to request deletion of your Sleep Fixer account and the data associated with it, published by DXK Labs.</p>
+
+<h2>How to request deletion</h2>
+<p><strong>In the app (fastest):</strong> open Sleep Fixer, go to <strong>Profile → Delete account</strong>, and confirm. This immediately and permanently deletes your account and all data backed up to it — no waiting required. This option appears once you've signed in (email, Google, or Apple); anonymous installs don't have an account to delete this way — see below.</p>
+<p><strong>By email (if you can't access the app):</strong></p>
+<ol>
+  <li>Send an email to <a href="mailto:dxk.labs@gmail.com?subject=Delete%20my%20Sleep%20Fixer%20account">dxk.labs@gmail.com</a> from the same email address you used to sign in to Sleep Fixer.</li>
+  <li>Use the subject line "Delete my Sleep Fixer account" and let us know the email address or sign-in method (email, Google, or Apple) tied to your account.</li>
+  <li>We will confirm your identity by replying to that same email address, then delete your account and data within 30 days.</li>
+</ol>
+
+<h2>If you never signed in</h2>
+<p>Most Sleep Fixer users never create an account — every install gets an anonymous identity automatically, with no name or email attached. If that's you, there's no account to delete, but you can still remove all of your data by deleting the app from your device, which removes everything stored locally, or by emailing us at the address above with your device's approximate install date and we'll locate and delete the corresponding anonymous record.</p>
+
+<h2>What gets deleted</h2>
+<ul>
+  <li>Your Firebase Authentication account (email, if you signed in).</li>
+  <li>Your synced profile, sleep plan, and progress history stored in Cloud Firestore.</li>
+  <li>Your purchase/subscription identity in RevenueCat and notification identity in OneSignal (these are anonymous identifiers, not linked to your name, but are removed on request too).</li>
+</ul>
+
+<h2>What may be retained</h2>
+<p>Aggregated, anonymous product-analytics events (via PostHog) and crash/error reports (via Sentry) are not linked to your name or email and are not deleted individually as part of an account-deletion request, since they were never tied to your identity in the first place. Payment records that Apple or Google are legally required to retain for tax and accounting purposes are kept by them, not by us, per their own policies.</p>
+
+<h2>Contact</h2>
+<p>Questions about this process? Reach out at <a href="mailto:dxk.labs@gmail.com">dxk.labs@gmail.com</a>.</p>
+
+</body>
+</html>
